@@ -17,20 +17,20 @@
 	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script type="text/javascript" src="Today/js/app.js"></script>
-	
+	<!--<link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">Shortcut Icon Link. Need to create PNG-->
 </head>
 
 <body>
-	<div data-role="page">
+	<div data-role="page" id="home">
 			<div data-role="panel" id="mypanel" >
 				
 				<div>
 					<ul>
 						<li><a href="#" class="ui-btn">Option A</a></li>
 						<li><a href="#" class="ui-btn">Option B</a></li>
-						<li><a href="#" class="ui-btn">Option C</a></li>
-						<li><a href="#" class="ui-btn">Option D</a></li>
-						<li><a href="#" class="ui-btn">Option E</a></li>
+						<li><a href="#" class="ui-btn ui-icon-shop ui-btn-icon-left">Shop</a></li>
+						<li><a href="#" class="ui-btn ui-icon-share ui-btn-icon-left">Share</a></li>
+						<li><a href="#" class="ui-btn ui-icon-info ui-btn-icon-left">Info</a></li>
 					<ul>
 				</div>
 		    </div>
@@ -119,7 +119,8 @@
 			<div data-role="footer" data-position="fixed">
   					<div data-role="navbar">
    				 		<ul>
-     				 		<li><a href="#Today" class="ui-btn-active" data-icon="cloud">Today</a></li>
+
+     				 		<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
      				 		<li><a href="#Tomorrow" class="ui-btn-active" data-icon="cloud">Tomorrow</a></li>
     				  		<li><a href="#dayAfterTomorrow" class="ui-btn-active" data-icon="cloud">Day After Tomorrow</a></li>
     					</ul>
@@ -164,8 +165,8 @@
 			<div data-role="footer" data-position="fixed">
   					<div data-role="navbar">
    				 		<ul>
+     				 		<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
      				 		<li><a href="#Today" class="ui-btn-active" data-icon="cloud">Today</a></li>
-     				 		<li><a href="#Tomorrow" class="ui-btn-active" data-icon="cloud">Tomorrow</a></li>
     				  		<li><a href="#dayAfterTomorrow" class="ui-btn-active" data-icon="cloud">Day After Tomorrow</a></li>
     					</ul>
  				 	</div>
@@ -197,7 +198,7 @@
 			
 			<div id= "icon">
 				<p id="wrapper"></p>
-				<center><img id="loader" src="Today/images/loader.gif"/></center>  
+				<center><img id="loader" src="Today/images/loader.gif"/></center>
 
 				<p id="temp3"></p>
        			 <p id="sum3"></p>
@@ -208,9 +209,10 @@
 			<div data-role="footer" data-position="fixed">
   					<div data-role="navbar">
    				 		<ul>
+     				 		<li><a href="#home" class="ui-btn-active" data-icon="home">Home</a></li>
      				 		<li><a href="#Today" class="ui-btn-active" data-icon="cloud">Today</a></li>
      				 		<li><a href="#Tomorrow" class="ui-btn-active" data-icon="cloud">Tomorrow</a></li>
-    				  		<li><a href="#dayAfterTomorrow" class="ui-btn-active" data-icon="cloud">Day After Tomorrow</a></li>
+    				  		
     					</ul>
  				 	</div>
 			</div>

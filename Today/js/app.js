@@ -58,45 +58,61 @@ $(document).ready(function(){
 	{
 		$('#temp').text("Now " +(Math.round(data.currently.apparentTemperature)));
 		$('#temp').addClass('degrees');
-		$('#sum').text(data.currently.summary);
-	
-		var today = data.currently.apparentTemperature;
-		var imageFile= parseIcon(data.currently.icon);
-		console.log("condition: "+ data.currently.icon);
-		console.log("image file: " + imageFile);
+		$('#sum').text(data.currently.summary
+		$('#temp2').text((Math.round(data.currently.apparentTemperature)));
+		$('#temp2').addClass('degrees');
+		$('#sum2').text(week[1].summary);
+		$('#temp3').text((Math.round(data.currently.apparentTemperature)));
+		$('#temp3').addClass('degrees');
+		$('#sum3').text(week[2].summary);	
 
-		 $('<img>').attr("src", "images/"+ imageFile).appendTo('#wrapper');
-		// var img= $('<img>');
-		// img.attr("src","images/" + imageFile);
-		// img.appendTo('#icon');
+		console.log(week);
+			var today = data.currently.apparentTemperature;
+			var tomorrow = data.daily.data[1];
+			var dayAfterTomorrow = data.daily.data[2];	
+			console.log(tomorrow.temperatureMin);
+		
+		console.log(today);
+			var imageFile= parseIcon(data.currently.icon);
+			console.log("condition: "+ data.currently.icon);
+			console.log("image file: " + imageFile);
+
+		 $('<img>').attr("src", "WeatherFinal/Today/images/"+ imageFile).appendTo('#wrapper');
 		console.log(today.icon);
-	}
+		
+		var image = parseIcon(week[1].icon);
+			$('<img>').attr("src","WeatherFinal/Today/images/" + image).appendTo('#wrapper');
+		
+		var image = parseIcon(week[2].icon);
+			$('<img>').attr("src","WeatherFinal/Today/images/" + image).appendTo('#wrapper');
 	
 	 function parseIcon(icon)
 	 {
-	    	switch(icon) 
-	    	{
-	    		case "cloudy":
-	    		case "wind":
+	    	switch(icon) {
+    			
+    			case "wind":
     			case "partly-cloudy-day":	
                 	   var img = "partly-cloudy-day.jpg";
-			
-				break;
-
-			case "cloudy":
-			case "partly-cloudy-night":	
+			break;
+				
+				case "cloudy";
+				case "partly-cloudy-night":	
                 	   var img = "partly-cloudy-night.jpg";
+			break;
 
-	               		 break;
-    			case "rain":
+				case "rain":
                 	  var img = "rainyDay.jpg";
+                	  var img = "rainyNight.jpg";
+			break;
 
-	               		 break;
-    			case "snow":
-			case "sleet":
-        	           var img = "snowyDay.jpg";
-                	
-				break;
+				case "snow":
+    				var img= "snowyDay.jpg"
+    			case "sleet":
+                	var img = "snowyNight.jpg";
+               
+            break;
+
+			break;
     			default: "#d86b93";
     				break;	
 		}
