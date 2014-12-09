@@ -21,6 +21,7 @@
 </head>
 
 <body>
+	<div data-role="page">
 			<div data-role="panel" id="mypanel">
 				<div>hello world</div>
 		    </div>
@@ -44,24 +45,34 @@
 				<span class="button nextButton"></span>
 			</div>	
 
-			<div data-role="controlgroup" data-type="vertical">
+			<!--<div data-role="controlgroup" data-type="vertical">
       			<p>Choose your day:</p>
       			<a href="Today/today.html" class="ui-btn">Today</a>
      			 <a href="tomorrow.html" class="ui-btn">Tomorrow 2</a>
      			 <a href="dayAfterTomorrow.html" class="ui-btn">Day After Tomorrow</a>
-   			 </div>
-		
+   			 </div>-->
+			
+			<ul data-role="listview" data-filter="true">
+				<li data-role="list-divider">Hairless</li>
+				<li><a href="today.html"></li>
 
-			<div data-role="footer">
+				<li data-role="list-divider">Short Hair</li>
+				<li><a href="tomorrow.html"></li>
+
+				<li data-role="list-divider">Long Hair</li>
+				<li><a href="dayAfterTomorrow.html"></li>
+			</ul>
+			<div data-role="footer" data-position="fixed">
   					<div data-role="navbar">
    				 <ul>
+   				 	
      				 <li><a href="Today/today.html" class="ui-btn-active" data-icon="home">Home</a></li>
      				 <li><a href="tomorrow.html" class="ui-btn-active" data-icon="search">Search</a></li>
     				  <li><a href="dayAfterTomorrow.html" class="ui-btn-active" data-icon="search">More Days</a></li>
     			</ul>
  				 	</div>
 			</div>
-
+	</div>
 
 
 
