@@ -22,6 +22,77 @@
 
 <body>
 	<div data-role="page">
+			<div data-role="panel" id="mypanel" >
+				
+				<div>
+					<ul>
+						<li><a href="#" class="ui-btn">Option A</a></li>
+						<li><a href="#" class="ui-btn">Option B</a></li>
+						<li><a href="#" class="ui-btn">Option C</a></li>
+						<li><a href="#" class="ui-btn">Option D</a></li>
+						<li><a href="#" class="ui-btn">Option E</a></li>
+					<ul>
+				</div>
+		    </div>
+
+			<div data-role="header">
+				<a href="#mypanel" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+				<h1>Style Weather</h1>
+		    </div>
+		
+			<div data-role="content">
+				<h2><center>Know what to wear, and when!</center></h2>
+			
+			<div id="cp_widget_ee59844e-0e73-4bdd-a304-f38b369564d0">...</div><script type="text/javascript">
+var cpo = []; cpo["_object"] ="cp_widget_ee59844e-0e73-4bdd-a304-f38b369564d0"; cpo["_fid"] = "AcKAQLsmM619";
+var _cpmp = _cpmp || []; _cpmp.push(cpo);
+(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
+var c = document.getElementsByTagName("script")[0];
+c.parentNode.insertBefore(cp, c); })(); </script><noscript>Powered by Cincopa <a href='http://www.cincopa.com/video-hosting'>Video Hosting for Business</a> solution.<span>Slideshow</span><span>Homepage</span><span>Placeholder </span><span>cvuavur vuvbwev ivcbdsvi </span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1080</span><span>height</span><span> 720</span><span>Placeholder</span><span>v lwrknfvwoirbvwio kbrvoiwb  vubwvwior vwrbn</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1080</span><span>height</span><span> 720</span><span>Placeholder</span><span>fvklebnkln jvbriovb ierobvneoi ivebonklf iovbion </span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 1080</span><span>height</span><span> 720</span></noscript>
+			<!--<div id="container">
+				<ul>
+					<li><img src="placeholder1.jpg" width="300" height="200" /></li>
+					<li><img src="placeholder2.jpg" width="300" height="200" /></li>
+					<li><img src="placeholder3.jpg" width="300" height="200" /></li>
+				</ul>
+				<span class="button prevButton"></span>
+				<span class="button nextButton"></span>
+			</div>-->
+
+			<div id="content">
+				<ul data-role="listview" data-filter="true">
+					<center><li data-role="list-divider">Today</li></center>
+					<li><a href="today.html"></li>
+
+					<center><li data-role="list-divider">Tomorrow</li></center>
+					<li><a href="tomorrow.html"></li>
+
+					<center><li data-role="list-divider">Day After Tomorrow</li></center>
+					<li><a href="dayAfterTomorrow.html"></li>
+				</ul>
+			</div>
+			<!--<div data-role="controlgroup" data-type="vertical">
+      			<p>Choose your day:</p>
+      			<a href="Today/today.html" class="ui-btn">Today</a>
+     			 <a href="tomorrow.html" class="ui-btn">Tomorrow 2</a>
+     			 <a href="dayAfterTomorrow.html" class="ui-btn">Day After Tomorrow</a>
+   			 </div>-->
+			
+			</div>	
+
+			<div data-role="footer" data-position="fixed">
+  					<div data-role="navbar">
+   				 		<ul>
+     				 		<li><a href="Today/today.html" class="ui-btn-active" data-icon="home">Home</a></li>
+     				 		<li><a href="tomorrow.html" class="ui-btn-active" data-icon="search">Search</a></li>
+    				  		<li><a href="dayAfterTomorrow.html" class="ui-btn-active" data-icon="cloud">More Days</a></li>
+    					</ul>
+ 				 	</div>
+			</div>
+	</div>
+
+<div data-role="page"><!--page1-->
 			<div data-role="panel" id="mypanel">
 				<div>hello world</div>
 		    </div>
@@ -32,10 +103,82 @@
 		    </div>
 		
 			<div data-role="content">
-				<h2><center>Know what to wear, and when!</center></h2>
+				<h2><center>Today</center></h2>
+
+			<div id= "icon">
+				<p id="wrapper"></p>
+				<center><img id="loader" src="images/loader.gif"/></center>  
+
+				<p id="temp"></p>
+       			 <p id="sum"></p>
+		
 			</div>
 			
-			<div id="container">
+			</div>	
+
+			<div data-role="footer" data-position="fixed">
+  					<div data-role="navbar">
+   				 		<ul>
+     				 		<li><a href="Today/today.html" class="ui-btn-active" data-icon="home">Home</a></li>
+     				 		<li><a href="tomorrow.html" class="ui-btn-active" data-icon="search">Search</a></li>
+    				  		<li><a href="dayAfterTomorrow.html" class="ui-btn-active" data-icon="search">More Days</a></li>
+    					</ul>
+ 				 	</div>
+			</div>
+	</div>
+
+<div data-role="page"> <!--page2-->
+			<div data-role="panel" id="mypanel">
+				<div>hello world</div>
+		    </div>
+
+			<div data-role="header">
+				<a href="#mypanel" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+				<h1>Style Weather</h1>
+		    </div>
+		
+			<div data-role="content">
+				<h2><center>Tomorrow</center></h2>
+			
+			<div id= "icon">
+				<p id="wrapper"></p>
+				<center><img id="loader" src="images/loader.gif"/></center>  
+
+				<p id="temp2"></p>
+       			 <p id="sum2"></p>
+		
+			</div>
+
+			
+			
+			</div>	
+
+			<div data-role="footer" data-position="fixed">
+  					<div data-role="navbar">
+   				 		<ul>
+     				 		<li><a href="Today/today.html" class="ui-btn-active" data-icon="home">Home</a></li>
+     				 		<li><a href="tomorrow.html" class="ui-btn-active" data-icon="search">Search</a></li>
+    				  		<li><a href="dayAfterTomorrow.html" class="ui-btn-active" data-icon="search">More Days</a></li>
+    					</ul>
+ 				 	</div>
+			</div>
+	</div>
+
+<div data-role="page"><!--page3-->
+			<div data-role="panel" id="mypanel">
+				<div>hello world</div>
+		    </div>
+
+			<div data-role="header">
+				<a href="#mypanel" class="ui-btn ui-btn-left ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left">Menu</a>
+				<h1>Style Weather</h1>
+		    </div>
+		
+			<div data-role="content">
+				<h2><center>Day After Tomorrow</center></h2>
+			
+			
+			<!--<div id="container">
 				<ul>
 					<li><img src="placeholder1.jpg" width="300" height="200" /></li>
 					<li><img src="placeholder2.jpg" width="300" height="200" /></li>
@@ -43,8 +186,20 @@
 				</ul>
 				<span class="button prevButton"></span>
 				<span class="button nextButton"></span>
-			</div>	
+			</div>-->
 
+			<div id="content">
+				<ul data-role="listview" data-filter="true">
+					<center><li data-role="list-divider">Today</li></center>
+					<li><a href="today.html"></li>
+
+					<center><li data-role="list-divider">Tomorrow</li></center>
+					<li><a href="tomorrow.html"></li>
+
+					<center><li data-role="list-divider">Day After Tomorrow</li></center>
+					<li><a href="dayAfterTomorrow.html"></li>
+				</ul>
+			</div>
 			<!--<div data-role="controlgroup" data-type="vertical">
       			<p>Choose your day:</p>
       			<a href="Today/today.html" class="ui-btn">Today</a>
@@ -52,40 +207,19 @@
      			 <a href="dayAfterTomorrow.html" class="ui-btn">Day After Tomorrow</a>
    			 </div>-->
 			
-			<ul data-role="listview" data-filter="true">
-				<li data-role="list-divider">Hairless</li>
-				<li><a href="today.html"></li>
+			</div>	
 
-				<li data-role="list-divider">Short Hair</li>
-				<li><a href="tomorrow.html"></li>
-
-				<li data-role="list-divider">Long Hair</li>
-				<li><a href="dayAfterTomorrow.html"></li>
-			</ul>
 			<div data-role="footer" data-position="fixed">
   					<div data-role="navbar">
-   				 <ul>
-   				 	
-     				 <li><a href="Today/today.html" class="ui-btn-active" data-icon="home">Home</a></li>
-     				 <li><a href="tomorrow.html" class="ui-btn-active" data-icon="search">Search</a></li>
-    				  <li><a href="dayAfterTomorrow.html" class="ui-btn-active" data-icon="search">More Days</a></li>
-    			</ul>
+   				 		<ul>
+     				 		<li><a href="Today/today.html" class="ui-btn-active" data-icon="home">Home</a></li>
+     				 		<li><a href="tomorrow.html" class="ui-btn-active" data-icon="search">Search</a></li>
+    				  		<li><a href="dayAfterTomorrow.html" class="ui-btn-active" data-icon="search">More Days</a></li>
+    					</ul>
  				 	</div>
 			</div>
 	</div>
 
-
-
-
-
-	<!--<div id= "icon">
-		<p id="wrapper"></p>
-	<center><img id="loader" src="images/loader.gif"/></center>  
-
-		<p id="temp"></p>
-        <p id="sum"></p>
-		
-	</div>-->
 
 </body>
 </html>
