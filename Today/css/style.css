@@ -3,7 +3,6 @@ img {
 	height: auto;
 }
 
-
 #temp {
 	position: relative;
 	left:900px;
@@ -38,7 +37,53 @@ img {
 	background-color: ;
 	}
 	
+#temp2 {
+	position: relative;
+	left:900px;
+	margin-top:500px;
+	font-family:"Avenir", "Helvetica", sans serif;
+   	font-size:100px;	
+        text-align:center;
+	background-color: #efefef;
+	width: 300px;
 }
 
+.degrees:after {
+	content: "\00b0";
+}
 
-	
+#sum2 {
+	position: relative;
+	left:900px;
+	margin-top:50px;
+	font-family:"Avenir", sans serif;
+   	font-size:50px;	
+        text-align:center;
+	background-color: #efefef;
+	width: 300px;
+}
+#temp3 {
+	position: relative;
+	left:900px;
+	margin-top:500px;
+	font-family:"Avenir", "Helvetica", sans serif;
+   	font-size:100px;	
+        text-align:center;
+	background-color: #efefef;
+	width: 300px;
+}
+
+.degrees:after {
+	content: "\00b0";
+}
+
+#sum3 {
+	position: relative;
+	left:900px;
+	margin-top:50px;
+	font-family:"Avenir", sans serif;
+   	font-size:50px;	
+        text-align:center;
+	background-color: #efefef;
+	width: 300px;
+}
