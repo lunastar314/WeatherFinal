@@ -26,7 +26,8 @@ $(document).ready(function(){
 		}
 		
 		//Request weather from forecast.io with a Latitude/Longitude
-		function getWeatherWithPos(lat,lng) {
+		function getWeatherWithPos(lat,lng) 
+		{
 			//Construct the url to request
 			apiURL += "/" + lat + ',' +  lng;
 			console.log(apiURL);
@@ -45,6 +46,8 @@ $(document).ready(function(){
 					},
 					error: function (xhr, status) {
 						console.log(status);
+						$('#loader').remove();
+						$('#error').removeClass("hidden");
 						showError();
 					}
 			});
@@ -56,13 +59,15 @@ $(document).ready(function(){
 
 	function parseWeather(data) 
 	{
+			var week = data.daily.data;
+
 		$('#temp').text("Now " +(Math.round(data.currently.apparentTemperature)));
 		$('#temp').addClass('degrees');
 		$('#sum').text(data.currently.summary
-		$('#temp2').text((Math.round(data.currently.apparentTemperature)));
+		$('#temp2').text(Math.round(week[1].temperatureMin));
 		$('#temp2').addClass('degrees');
 		$('#sum2').text(week[1].summary);
-		$('#temp3').text((Math.round(data.currently.apparentTemperature)));
+		$('#temp3').text(Math.round(week[2].temperatureMin));
 		$('#temp3').addClass('degrees');
 		$('#sum3').text(week[2].summary);	
 
@@ -77,18 +82,19 @@ $(document).ready(function(){
 			console.log("condition: "+ data.currently.icon);
 			console.log("image file: " + imageFile);
 
-		 $('<img>').attr("src", "WeatherFinal/Today/images/"+ imageFile).appendTo('#wrapper');
+		 $('<img>').attr("src", "images/"+ imageFile).appendTo('#wrapper');
 		console.log(today.icon);
 		
 		var image = parseIcon(week[1].icon);
-			$('<img>').attr("src","WeatherFinal/Today/images/" + image).appendTo('#wrapper');
+			$('<img>').attr("src","images/" + image).appendTo('#wrapper');
 		
 		var image = parseIcon(week[2].icon);
-			$('<img>').attr("src","WeatherFinal/Today/images/" + image).appendTo('#wrapper');
+			$('<img>').attr("src","images/" + image).appendTo('#wrapper');
 	
 	 function parseIcon(icon)
-	 {
-	    	switch(icon) {
+	 	{
+	    	switch(icon) 
+	    	{
     			
     			case "wind":
     			case "partly-cloudy-day":	
@@ -115,7 +121,7 @@ $(document).ready(function(){
 			break;
     			default: "#d86b93";
     				break;	
-		}
+			}
 		return img;
     	}
 
@@ -125,6 +131,7 @@ $(document).ready(function(){
 	{
 		$('#temp').text('Uh-Oh! Style Weather is currently unavailable.');
 		$('body').css('background-color','rgb(236,93,183');	
+	}
 	}
 
 });
