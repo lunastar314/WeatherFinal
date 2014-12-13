@@ -83,10 +83,10 @@ $(document).ready(function() {
         console.log(today.icon);
 
         var image = parseIcon(week[1].icon);
-        $('<img>').attr("src", "images/" + image).appendTo('#wrapper');
+        $('<img>').attr("src", "images/" + image).appendTo('#wrapper2');
 
         var image = parseIcon(week[2].icon);
-        $('<img>').attr("src", "images/" + image).appendTo('#wrapper');
+        $('<img>').attr("src", "images/" + image).appendTo('#wrapper3');
     }
 
     function parseIcon(icon) {
