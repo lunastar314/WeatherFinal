@@ -7,11 +7,13 @@ img {
 	position: relative;
 	left:200px;
 	bottom:300px;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
 	font-family:"Avenir", "Helvetica", sans serif;
-   	font-size:24px;	
-        text-align:center;
-	background-color: #efefef;
-	width: 300px;
+   	font-size:20px;	
+    text-align:center;
+	background-color: #eeaabc;
+	width: 200px;
 }
 
 .degrees:after {
@@ -22,10 +24,12 @@ img {
 	position: relative;
 	left:200px;
 	bottom:300px;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
 	font-family:"Avenir", sans serif;
-   	font-size:24px;	
-        text-align:center;
-	background-color: #efefef;
+   	font-size:20px;	
+    text-align:center;
+	background-color: #eeaabc;
 	width: 200px;
 }
 
@@ -41,10 +45,12 @@ img {
 	position: relative;
 	left:200px;
 	bottom:300px;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
 	font-family:"Avenir", "Helvetica", sans serif;
-   	font-size:24px;	
+   	font-size:20px;	
         text-align:center;
-	background-color: #efefef;
+	background-color: #eeaabc;
 	width: 200px;
 }
 
@@ -56,10 +62,12 @@ img {
 	position: relative;
 	left:200px;
 	bottom:300px;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
 	font-family:"Avenir", sans serif;
-   	font-size:24px;	
-        text-align:center;
-	background-color: #efefef;
+   	font-size:18px;	
+    text-align:center;
+	background-color: #eeaabc;
 	width: 200px;
 }
 
@@ -75,10 +83,12 @@ img {
 	position: relative;
 	left:200px;
 	bottom:300px;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
 	font-family:"Avenir", "Helvetica", sans serif;
-   	font-size:24px;	
+   	font-size:20px;	
     text-align:center;
-	background-color: #efefef;
+	background-color: #eeaabc;
 	width: 200px;
 }
 
@@ -90,10 +100,12 @@ img {
 	position: relative;
 	left:200px;
 	bottom:300px;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
 	font-family:"Avenir", sans serif;
-   	font-size:24px;	
+   	font-size:20px;	
     text-align:center;
-	background-color: #efefef;
+	background-color: #eeaabc;
 	width: 200px;
 }
 
