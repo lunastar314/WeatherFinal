@@ -1,5 +1,18 @@
 $(document).ready(function() {
 
+    $("#owl-example").owlCarousel();
+    
+    $(window).on("orientationchange",function()
+    {
+     if(window.orientation == 0)
+       {$('#portrait').removeClass("hidden");
+        $('#landscape').addClass("hidden");
+       }
+     else 
+       {$('#landscape').removeClass("hidden");
+        $('#portrait').addClass("hidden");} 
+    });
+    
     var apiKey = '9dd895f2e791fb8329d7d7f729d1e016';
     var apiURL = 'https://api.forecast.io/forecast/' + apiKey;
     var defaultLat = '40.8264';

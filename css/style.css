@@ -5,7 +5,7 @@ img {
 
 #temp {
 	position: relative;
-	left:200px;
+	left:150px;
 	bottom:300px;
 	-webkit-border-radius: 1000px;
 	border-radius: 1000px;
@@ -22,7 +22,7 @@ img {
 
 #sum {
 	position: relative;
-	left:200px;
+	left:150px;
 	bottom:300px;
 	-webkit-border-radius: 1000px;
 	border-radius: 1000px;
@@ -36,14 +36,14 @@ img {
 #wrapper {
 	float:center;
 	margin-top:10px;
-	width: 350px;
+	width: 50px;
 	height:425px;
 	
 	}
 	
 #temp2 {
 	position: relative;
-	left:200px;
+	left:150px;
 	bottom:300px;
 	-webkit-border-radius: 1000px;
 	border-radius: 1000px;
@@ -60,7 +60,7 @@ img {
 
 #sum2 {
 	position: relative;
-	left:200px;
+	left:150px;
 	bottom:300px;
 	-webkit-border-radius: 1000px;
 	border-radius: 1000px;
@@ -81,7 +81,7 @@ img {
 
 #temp3 {
 	position: relative;
-	left:200px;
+	left:150px;
 	bottom:300px;
 	-webkit-border-radius: 1000px;
 	border-radius: 1000px;
@@ -98,7 +98,7 @@ img {
 
 #sum3 {
 	position: relative;
-	left:200px;
+	left:150px;
 	bottom:300px;
 	-webkit-border-radius: 1000px;
 	border-radius: 1000px;
@@ -112,7 +112,7 @@ img {
 #wrapper3 {
 	float:center;
 	margin-top:auto;
-	width: 350px;
+	width: 300px;
 	height:425px;
 	
 	}
