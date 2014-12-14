@@ -18,9 +18,15 @@
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 	<!--<link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">Shortcut Icon Link. Need to create PNG-->
+	<!--Owl Carousel-->
+	<link rel="stylesheet" href="owl/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="owl/owl-carousel/owl.theme.css">
+	<script src="owl/assets/js/jquery-1.9.1.min.js"></script>
+	
 </head>
 
 <body>
+	<div id="portrait">
 	<div data-role="page" id="home">
 			<div data-role="panel" id="mypanel" >
 				
@@ -217,11 +223,12 @@
  				 	</div>
 			</div>
 	</div>
+	</div>
 
 	<div id="landscape" class="hidden">
-		<h1> Simple Weather </h1>
+		<h1> Style Weather </h1>
 			<div id="owl-example" class="owl-carousel" id="slide">	
-				<div id="day1" class="week1">
+				<div id="Today" class="week1">
 					<p class="title">Today</p>
 					<p id="d1" class="degrees"></p>
 					<div id="icon1"></div>

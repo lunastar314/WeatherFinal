@@ -115,5 +115,21 @@ img {
 	width: 300px;
 	height:425px;
 	
-	}
+}
+
+#landscape {
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	background-color: #cbe007;
+	Position: relative;
+	
+}
+
+.hidden {
+	display:none;
+}
+.owl-pagination{
+	display: none;
+}
 	
