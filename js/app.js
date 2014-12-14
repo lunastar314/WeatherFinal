@@ -6,27 +6,29 @@ $(document).ready(function() {
     {
      if(window.orientation == 0)
        {$('#portrait').removeClass("hidden");
-        $('#landscape').addClass("hidden");
+            $('#landscape').addClass("hidden");
        }
      else 
        {$('#landscape').removeClass("hidden");
-        $('#portrait').addClass("hidden");} 
+            $('#portrait').addClass("hidden");} 
     });
-    
+
     var apiKey = '9dd895f2e791fb8329d7d7f729d1e016';
     var apiURL = 'https://api.forecast.io/forecast/' + apiKey;
     var defaultLat = '40.8264';
     var defaultLng = '-73.8786';
 
     // Request the user's Latitude/Longitude
-    if (Modernizr.geolocation) {
+    if (Modernizr.geolocation) 
+    {
         navigator.geolocation.getCurrentPosition(success, error);
     } else {
-        //Prompt User
-    }
+        $('#error').text("Unable to find location")
+           }
 
     //Received a Latitude/Longitude from the browser
-    function success(position) {
+    function success(position) 
+    {
         console.log(position);
         getWeatherWithPos(position.coords.latitude, position.coords.longitude);
     }
@@ -100,6 +102,47 @@ $(document).ready(function() {
 
         var image = parseIcon(week[2].icon);
         $('<img>').attr("src", "images/" + image).appendTo('#wrapper3');
+    
+    
+
+         var timeStamp = data.currently.time;
+            console.log(timeStamp);
+         var d = new Date();
+            console.log(d);
+            d.setTime(timeStamp*1000);
+            console.log(d.setTime);
+            var time = [ d.getHours(), d.getMinutes(), d.getSeconds() ];
+            var suffix = ( time[0] < 12 ) ? "AM" : "PM";
+            time[0] = ( time[0] < 12 ) ? time[0] : time[0] - 12;
+            time[0] = time[0] || 12;
+   
+            $('#t').text(d.getUTCHours() + suffix);
+            $('#hour1').text(Math.round(data.hourly.data[0].temperature));
+            $('#hour2').text(Math.round(data.hourly.data[1].temperature));
+            $('#hour3').text(Math.round(data.hourly.data[2].temperature));
+            $('#hour4').text(Math.round(data.hourly.data[3].temperature));
+            $('#hour5').text(Math.round(data.hourly.data[4].temperature));
+            $('#hour6').text(Math.round(data.hourly.data[5].temperature));
+            $('#hour7').text(Math.round(data.hourly.data[6].temperature));
+            $('#hour8').text(Math.round(data.hourly.data[7].temperature));
+            $('#hour9').text(Math.round(data.hourly.data[8].temperature));
+            $('#hour10').text(Math.round(data.hourly.data[9].temperature));
+            $('#hour11').text(Math.round(data.hourly.data[10].temperature));
+            $('#hour12').text(Math.round(data.hourly.data[11].temperature));
+            $('#hour13').text(Math.round(data.hourly.data[12].temperature));
+            $('#hour14').text(Math.round(data.hourly.data[13].temperature));
+            $('#hour15').text(Math.round(data.hourly.data[14].temperature));
+            $('#hour16').text(Math.round(data.hourly.data[15].temperature));
+            $('#hour17').text(Math.round(data.hourly.data[16].temperature));
+            $('#hour18').text(Math.round(data.hourly.data[17].temperature));
+            $('#hour19').text(Math.round(data.hourly.data[18].temperature));
+            $('#hour20').text(Math.round(data.hourly.data[19].temperature));
+            $('#hour21').text(Math.round(data.hourly.data[20].temperature));
+            $('#hour22').text(Math.round(data.hourly.data[21].temperature));
+            $('#hour23').text(Math.round(data.hourly.data[22].temperature));
+            $('#hour24').text(Math.round(data.hourly.data[23].temperature));
+
+
     }
 
     function parseIcon(icon) {
