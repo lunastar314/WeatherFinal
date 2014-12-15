@@ -140,3 +140,10 @@ img {
 .hidden {
 	display:none;
 }
+
+#appTitle {
+	font-family:"Avenir", sans serif;
+   	font-size:20px;	
+    text-align:center;
+	background-color: #eeaabc;
+}
