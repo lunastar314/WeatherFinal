@@ -406,11 +406,13 @@ $(document).ready(function() {
         switch (icon) {
 
             case "wind":
+            case "clear-day":
             case "partly-cloudy-day":
                 var img = "partly-cloudy-day.jpg";
                 break;
 
             case "cloudy":
+            case "clear-night":
             case "partly-cloudy-night":
                 var img = "partly-cloudy-night.jpg";
                 break;

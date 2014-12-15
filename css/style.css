@@ -41,27 +41,8 @@ img {
 	
 }
 
-#landscape {
-	height: 100vh;
-	margin: 0px;
-	padding: 0px;
-	background-color: #f2e5d8;
-	Position: relative;
-	/*top: 150px;*/
-}
 
-.title {
-	font-size: 14px;
-	color: #ffffff;
-}
 
-/*.owl-pagination{
-	display: none;
-}*/
-
-.hidden {
-	display:none;
-	
 #temp2 {
 	position: relative;
 	left:150px;
@@ -138,3 +119,24 @@ img {
 	
 }
 
+#landscape {
+	height: 100vh;
+	margin: 0px;
+	padding: 0px;
+	background-color: #f2e5d8;
+	Position: relative;
+	/*top: 150px;*/
+}
+
+.title {
+	font-size: 14px;
+	color: #ffffff;
+}
+
+/*.owl-pagination{
+	display: none;
+}*/
+
+.hidden {
+	display:none;
+}
