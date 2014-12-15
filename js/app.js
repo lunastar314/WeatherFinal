@@ -397,6 +397,32 @@ $(document).ready(function() {
         $('#hour24').text(times[0] + suffix);
 
 
+        $('#temp1').text(Math.round(data.currently.apparentTemperature));
+        $('#temp2').text(Math.round(data.hourly.data[1].temperature));
+        $('#temp3').text(Math.round(data.hourly.data[2].temperature));
+        $('#temp4').text(Math.round(data.hourly.data[3].temperature));
+        $('#temp5').text(Math.round(data.hourly.data[4].temperature));
+        $('#temp6').text(Math.round(data.hourly.data[5].temperature));
+        $('#temp7').text(Math.round(data.hourly.data[6].temperature));
+        $('#temp8').text(Math.round(data.hourly.data[7].temperature));
+        $('#temp9').text(Math.round(data.hourly.data[8].temperature));
+        $('#temp10').text(Math.round(data.hourly.data[9].temperature));
+        $('#temp11').text(Math.round(data.hourly.data[10].temperature));
+        $('#temp12').text(Math.round(data.hourly.data[11].temperature));
+        $('#temp13').text(Math.round(data.hourly.data[12].temperature));
+        $('#temp14').text(Math.round(data.hourly.data[13].temperature));
+        $('#temp15').text(Math.round(data.hourly.data[14].temperature));
+        $('#temp16').text(Math.round(data.hourly.data[15].temperature));
+        $('#temp17').text(Math.round(data.hourly.data[16].temperature));
+        $('#temp18').text(Math.round(data.hourly.data[17].temperature));
+        $('#temp19').text(Math.round(data.hourly.data[18].temperature));
+        $('#temp20').text(Math.round(data.hourly.data[19].temperature));
+        $('#temp21').text(Math.round(data.hourly.data[20].temperature));
+        $('#temp22').text(Math.round(data.hourly.data[21].temperature));
+        $('#temp23').text(Math.round(data.hourly.data[22].temperature));
+        $('#temp24').text(Math.round(data.hourly.data[23].temperature));
+
+
 
     }
 
