@@ -142,8 +142,12 @@ img {
 }
 
 #appTitle {
+	margin-bottom: 10px;
+	margin-top: 10px;
 	font-family:"Avenir", sans serif;
    	font-size:20px;	
     text-align:center;
 	background-color: #eeaabc;
+	-webkit-border-radius: 1000px;
+	border-radius: 1000px;
 }
