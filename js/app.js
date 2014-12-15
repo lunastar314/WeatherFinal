@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $("#owl-example").owlCarousel();
- 
+
     $(window).on("orientationchange", function() {
         if (window.orientation == 0) {
             $('#portrait').removeClass("hidden");
@@ -20,16 +20,14 @@ $(document).ready(function() {
     var defaultLng = '-73.8786';
 
     // Request the user's Latitude/Longitude
-    if (Modernizr.geolocation) 
-    {
+    if (Modernizr.geolocation) {
         navigator.geolocation.getCurrentPosition(success, error);
     } else {
         $('#error').text("Unable to find location")
-           }
+    }
 
     //Received a Latitude/Longitude from the browser
-    function success(position) 
-    {
+    function success(position) {
         console.log(position);
         getWeatherWithPos(position.coords.latitude, position.coords.longitude);
     }
@@ -103,8 +101,8 @@ $(document).ready(function() {
 
         var image = parseIcon(week[2].icon);
         $('<img>').attr("src", "images/" + image).appendTo('#wrapper3');
-    
-        
+
+
 
         var timeStamp = data.hourly.data[0].time;
         console.log(timeStamp);
@@ -399,7 +397,7 @@ $(document).ready(function() {
         $('#hour24').text(times[0] + suffix);
 
 
-         
+
     }
 
     function parseIcon(icon) {
@@ -445,5 +443,4 @@ $(document).ready(function() {
     }
 
 
-}
-);
+});
